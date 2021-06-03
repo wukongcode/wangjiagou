@@ -23,7 +23,7 @@ jobs:
           id: deployStatic
           uses: TencentCloudBase/cloudbase-action@v1.1.1
           with: 
-            secretId: AKIDxkIacOu98tPghTzECvymOn0zjFWZNwGL
-            secretKey: sUqwnNhpiOr54oJacQzINDoAHAoDNJ0S
-            envId: wangjiagou-8gbfgm8ed0bda7d8
+            secretId: ${{ secrets.SECRET_ID }}
+            secretKey: ${{ secrets.SECRET_KEY }}
+            envId: ${{ secrets.ENV_ID }}
             staticSrcPath: public
